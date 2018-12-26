@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "241599425886",
+    "firebase_url": "https://lscam-bf7e0.firebaseio.com",
+    "project_id": "lscam-bf7e0",
+    "storage_bucket": "lscam-bf7e0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:241599425886:android:da980a38e719dd93",
+        "android_client_info": {
+          "package_name": "com.simpleloan.lscam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "241599425886-hpllgihun8bj8eg59hn4d4d2bue5mck0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.simpleloan.lscam",
+            "certificate_hash": "df17e3d86abc7ff6b1fd4200c91108121fe81124"
+          }
+        },
+        {
+          "client_id": "241599425886-reo5t4ek59inco268o74gmgf8c43cro5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAHPN0LzS2Tdg_GPuZrBinAFOGls7M3tc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "241599425886-reo5t4ek59inco268o74gmgf8c43cro5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

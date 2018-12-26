@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            app:startDestination="@id/home_fragment">
+
+    <fragment
+            android:id="@+id/home_fragment"
+            android:name="com.simpleloan.lscam.UI.Fragments.HomeFragment"
+            tools:layout="@layout/fragment_home">
+
+        <action
+                android:id="@+id/action_home_to_camera"
+                app:destination="@+id/camera_fragment"
+                app:enterAnim="@anim/slide_out_top"
+                app:exitAnim="@anim/slide_in_top"
+                app:popEnterAnim="@anim/slide_out_top"
+                app:popExitAnim="@anim/slide_in_top"/>
+
+        <action
+                android:id="@+id/action_home_to_gallery"
+                app:destination="@+id/gallery_fragment"
+                app:enterAnim="@anim/slide_out_top"
+                app:exitAnim="@anim/slide_in_top"
+                app:popEnterAnim="@anim/slide_out_top"
+                app:popExitAnim="@anim/slide_in_top"/>
+
+    </fragment>
+    <fragment
+            android:id="@+id/camera_fragment"
+            android:name="com.simpleloan.lscam.UI.Fragments.CameraFragment"
+            android:label="Fragment Camera"
+            tools:layout="@layout/fragment_camera">
+
+        <action
+                android:id="@+id/action_camera_to_gallery"
+                app:destination="@+id/gallery_fragment"
+                app:enterAnim="@anim/slide_out_top"
+                app:exitAnim="@anim/slide_in_top"
+                app:popEnterAnim="@anim/slide_out_top"
+                app:popExitAnim="@anim/slide_in_top"/>
+
+        <argument
+                android:name="Email"
+                android:defaultValue="sattar@grampower.com"/>
+    </fragment>
+
+    <fragment
+            android:id="@+id/gallery_fragment"
+            android:name="com.simpleloan.lscam.UI.Fragments.GalleryFragment"
+            android:label="Fragment Gallery"
+            tools:layout="@layout/fragment_gallery">
+
+        <argument
+                android:name="Email"
+                android:defaultValue="sattar@grampower.com"/>
+
+        <action
+                android:id="@+id/action_gallery_to_full_image"
+                app:destination="@+id/full_image_fragment"
+                app:enterAnim="@anim/slide_out_top"
+                app:exitAnim="@anim/slide_in_top"
+                app:popEnterAnim="@anim/slide_out_top"
+                app:popExitAnim="@anim/slide_in_top"/>
+
+    </fragment>
+
+
+    <fragment
+            android:id="@+id/full_image_fragment"
+            android:name="com.simpleloan.lscam.UI.Fragments.FullImageFragment"
+            android:label="Fragment Image"
+            tools:layout="@layout/fragment_full_image">
+
+
+    </fragment>
+
+
+</navigation>
